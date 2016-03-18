@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "customizing_users",
+  "version": "1.0.0",
+  "description": "customizing users using angular",
+  "main": "server.js",
+  "author": "amrita",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.4.1",
+    "express": "^4.13.4"
+  }
+}
