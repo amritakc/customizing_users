@@ -1,0 +1,24 @@
+<div ng-controller="usersController">
+    
+	 <form>
+       First Name: <input type='text' ng-model='newUser.name'  ng-init="newUser.name= 'mango'">
+       Last Name: <input type='text' ng-model='newUser.last' >
+       Favorite Language: <input type='text' ng-model='newUser.language' >
+       <input type='submit' value='create new user' ng-click='addUser()'>
+    </form> 
+ 	<table>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th> 
+            <th>Favorite Language</th>
+            <th>Actions</th>
+          </tr>
+          <tr ng-repeat="user in users track by $index">
+            <td>{{ user.name }} </td>
+            <td>{{ user.last }}</td> 
+            <td>{{user.language}}</td>
+            <td ng-click='removeUser($index)'><button>Delete User</button></td>
+          </tr>
+        </table>
+
+</div>
